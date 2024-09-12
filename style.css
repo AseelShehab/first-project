@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Style on all the items I have on the page */
+*{
+    font-family: "Kanit",sans-serif;
+    margin:0;
+    padding:0;
+    /*border-box vs contant-box: (study)*/
+    box-sizing:border-box;
+    /* By changing the performance of the page, make it flexible */
+    scroll-behavior:smooth;
+}
+header{
+    background-color:teal;
+    width:100%;
+    /* هاي الخاصية بتخلي ال header ثابت في راس الصفحة لما اعمل scrolling  */
+    position:fixed;
+    /* هاي الخاصية بتخلي  بس header هو اللي ظاهر ما يطلع فوقو اشي  */
+    z-index:999;
+    /*هاي الخاصية عشان ارتب العناصر جنب بعض  */
+    display:flex;
+    /* هاي الخاصية بتعمللي مسافة بين اللوغو وباقي العناصر  */
+    justify-content:space-between;
+    /* بدي ياهم يكونو بالوسط  */
+    align-items:center;
+    /* بساعد ع التحكم بالمسافات  */
+    /* shorthands :button/top  left/rigth */
+    padding:10px 200px;
+}
+.logo{
+    /* خاصية لازالت الخط من تحت الكلمة */
+    text-decoration:none;
+    /* هون بستخدم em مش px عشان تخلي السايز متناسب مع البودي  */
+    font-size:1.8em;
+    color:whitesmoke;
+    /* عشان يخلي الحروف كلها كبيرة  */
+    text-transform:uppercase;
+    /* عشان انصح الكلمة  */
+    font-weight:700px;
+}
+.nav1 a{
+    text-decoration:none;
+    font-size:1.1em;
+    color:whitesmoke;
+    font-weight:500px;
+    /* عشان اعمل تباعد بينهم  */
+    padding-left:30px;
+}
+/* هاي خاصة بس انس ااشر ويتغير اللون عندي  */
+.nav1 a:hover{
+    color:aqua;
+
+}
