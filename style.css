@@ -119,5 +119,59 @@ section{
     color:#826644;
     font-size: 1.7em;
     padding-right:30px;
-
+}
+.title{
+    /*  لانها بلوك ايلمينت وبدي اجيبها ع الوسط عشان هيك بعمل ديسبلاي فليكس باول خطوتين خليتها بالوسط */
+    display:flex;
+    justify-content: center;
+    color:#826644;
+    font-size:2.2em;
+    font-weight:800;
+    margin-bottom:30px;
+}
+.content{
+    display:flex;
+    justify-content:center;
+    /* هاد بيحدد هل العناصر حيكونو جنب بعض او تحت بعض  */
+    flex-direction: row;
+    /* باي ديفولت بتكون نوراب عشان هيك بدي احط هاي  */
+    /* لما بتيحها بتصير تزبط معي عشان السايز */
+    flex-wrap:wrap;
+}
+.cart{
+    background-color: whitesmoke;
+    width: 21.25em;
+    /* هسا هاي بتعمللي الظل حولين البوكس تبعي  */
+    /* بيستقبل 4 قيم 
+    0:هل بدي ظل فوق او تحت
+    5:هل بدي يمين او يسار اذا يمين بحط قيمة موجبة اذا يسار سالبة 
+    25:قديش بدك ياه يكون واضح الظل
+    rgba 
+    */
+    box-shadow :0 5px 25px rgba(1,1,1,15%);
+    border-radius:10px ;
+    padding:25px;
+    margin:15px;
+    transition:0.7s ease;
+}
+.cart:hover{
+    /* background-color:#a08e71; */
+    /* عشان يكبر شوي لما ااشر عليه */
+    /* على  الاكس والواي  */
+    transform:scale(1.1);
+}
+.icon{
+    color:#a08e71;
+    font-size: 8em;
+    text-align:center;
+}
+.cart h3{
+    color:#a08e71;
+    font-size:1.2em;
+    text-align:center;
+    font-weight:700;
+    margin: 10px;
+}
+.info{
+    text-align: center;
 }
