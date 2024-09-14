@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
 /* Style on all the items I have on the page */
 *{
-    font-family: "Kanit",sans-serif;
+    font-family: "Playpen Sans", cursive;
     margin:0;
     padding:0;
     /*border-box vs contant-box: (study)*/
@@ -10,7 +12,7 @@
     scroll-behavior:smooth;
 }
 header{
-    background-color:teal;
+    background-color:rgb(195, 176, 145);
     width:100%;
     /* هاي الخاصية بتخلي ال header ثابت في راس الصفحة لما اعمل scrolling  */
     position:fixed;
@@ -31,7 +33,7 @@ header{
     text-decoration:none;
     /* هون بستخدم em مش px عشان تخلي السايز متناسب مع البودي  */
     font-size:1.8em;
-    color:whitesmoke;
+    color:RGB(130,102,68);
     /* عشان يخلي الحروف كلها كبيرة  */
     text-transform:uppercase;
     /* عشان انصح الكلمة  */
@@ -40,13 +42,82 @@ header{
 .nav1 a{
     text-decoration:none;
     font-size:1.1em;
-    color:whitesmoke;
+    color:RGB(130,102,68);
     font-weight:500px;
     /* عشان اعمل تباعد بينهم  */
     padding-left:30px;
 }
 /* هاي خاصة بس انس ااشر ويتغير اللون عندي  */
 .nav1 a:hover{
-    color:aqua;
+    color:whitesmoke
+}
+/* هاي بتتنفذ ع كل السكشنات عندي  */
+section{
+    padding:100px 200px;
+}
+.main{
+    width:100%;
+    /* اقل حاجة تكون القيمة اللي هون وبتتغير بناءا ع العناصر اللي جواها  */
+    /* vh:view port */
+    min-height:100vh;
+    display:flex;
+    /* ما بقد اعملها الا لما اعمل ديسبلاي فليكس  */
+    align-items:center;
+    /* هاي لو بدي احط خلفية صوؤة  */
+    /* background:url() no-repeat;
+    background-size:cover; 
+    backgroung-position:center;
+    (لما اعمل سكرول لتحت ع الصوؤة بتضل ثابتة ما بتتحرك)
+     backgroung-attachment:fixed;
+    */
+    background-color:whitesmoke ;
+}
+.main h2{
+    color: #a08e71;
+    font-size:1.4em ;
+    font-weight:700;
+}
+.main h2 span{
+    /* لانو ال سبان  عنصر ان لاين وبدي اخليه يتنفذ بالبلوك */
+    display: inline-block;
+      color:#826644 ;
+      font-size:3em;
+      font-weight: 600;     
+      margin-top:10px;        
+}
+.main h3{
+    color:#a08e71;
+    font-size:2em;
+    font-weight:700 ;
+    /* المسافات اللي بدي  اعملها بين الاحرف  */
+    letter-spacing:1px;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+.btn{
+    text-decoration:none ;
+    color: whitesmoke;
+    font-size: 1.1em;
+    background-color:#826644;
+    border-radius:8px;
+    font-weight:600;
+    /* لانو يعتبر انلاين */
+    display:inline-block;
+    padding:0.9375em 2.1875em;
+    letter-spacing:1px;
+    margin-bottom:40px;
+    /* التحول وقت اللي بدي يصير التحول تدريجي */
+    transition:0.7s ease;
+}
+.btn:hover{
+    background-color:#a08e71;
+    /* عشان يكبر شوي لما ااشر عليه */
+    /* على  الاكس والواي  */
+    transform:scale(1.1);
+}
+.media a{
+    color:#826644;
+    font-size: 1.7em;
+    padding-right:30px;
 
 }
