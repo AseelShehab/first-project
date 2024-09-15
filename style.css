@@ -240,3 +240,22 @@ section{
 .cards-contents .info p{
     font-size:1.1em;
 }
+.footer{
+    background-color:#a08e71;
+    color: whitesmoke;
+    padding: 2em;
+    /* عشان التقسيمة لانو الfooterهو الاب عندي  */
+    display:flex;
+    justify-content: space-between;
+}
+.fotter{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.fotter span{
+    color:#826644;
+}
+.footer .media a{
+    font-size: 1.3em;
+    color: whitesmoke;
+}
