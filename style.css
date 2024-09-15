@@ -175,3 +175,68 @@ section{
 .info{
     text-align: center;
 }
+.tabs{
+    background-color:whitesmoke;
+}
+/*  بدي اعمل ازاحة بين العنوان والتابس  بس لهاي الجزئية مش كل السكشنات */
+.tabs .content{
+    margin-top: 30px;
+}
+/* هاي للتاب بشكل عام اللي ب جزئية بروجيكت  */
+.tab{
+    background-color: whitesmoke;
+    /* ممكن اعملها بوردر او ظلال زي قبل  */
+    border:1px solid black;
+    min-height: 14em;
+    width: 23em;
+    overflow:hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.tab:hover {
+    transform: scale(1.1);
+} 
+/* الشفافية لما ااشر ع التاب يطلع ابيض شوي شفاف  */
+.tab:hover .img{
+    opacity: 0.9;
+}
+.img img{
+    /* هون خلص زبطت الصوؤة  */
+    width: 100%;
+}
+.infor{
+    padding: 1em;
+}
+.p{
+    font-size: 0.8em;
+    color: black;
+}
+.title1{
+    /* عشان اعمل مسافة بين الزر وبين العنوان  */
+    display:flex;
+    justify-content:space-between;
+    text-transform: capitalize;
+    font-weight:800;
+    margin-top: 10px;
+    color:#826644;
+}
+.btn1{
+    text-decoration: none;
+    color:#826644;
+};
+.btn1:hover{
+    color:#a08e71;
+}
+/* هون انا ححدت بالضبط اي ايكون لانو الايكون مشتركة بكلاس  */
+.cards-contents .icon{
+   font-size: 4.5em;
+}
+/* نفس الفكرة حددت بالضبط +بس غيرت اللون هون */
+.cards-contents .info h3{
+    color: black;
+
+}
+.cards-contents .info p{
+    font-size:1.1em;
+}
