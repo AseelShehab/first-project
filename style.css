@@ -27,6 +27,8 @@ header{
     /* بساعد ع التحكم بالمسافات  */
     /* shorthands :button/top  left/rigth */
     padding:10px 200px;
+    /*هاي الخاصية عشان ارتب العناصر جنب بعض  */
+
 }
 .logo{
     /* خاصية لازالت الخط من تحت الكلمة */
@@ -258,4 +260,47 @@ section{
 .footer .media a{
     font-size: 1.3em;
     color: whitesmoke;
+}
+/* بعملها عشان اخلي الموقع تبعي في حدود قياسات معيبنة يتصرف زي ما بدي  */
+@media (max-width:1023px){
+    header{
+        /* هسا فوق انا معطيها بادنغ لحجم الشاشات الكبيرة اما هون لحجم التلفونات */
+        padding: 12px 10px;
+    }
+    .nav1 a{
+        padding-left:10px;
+    }
+    .title{
+        font-size:1.8em;
+    }
+    section{
+        padding:80px 20px;
+    }
+    .main h2{
+        font-size:1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        /* بما اني اعمدة حستخدم هاي مش جستفاي  */
+        align-items:center;
+    }
+}
+@media(max-width:641px){
+    body{
+        font-size:12px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h2{
+        font-size:1.4em;
+    }
+}
+@media(max-width:300px){
+    body{
+        font-size:10px;
+    }
 }
